@@ -1,0 +1,41 @@
+body{
+    margin: 5px;
+    background-color: rgb(245, 234, 234);
+    color: rgba(162, 167, 167, 0.142);
+}
+.contened{
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    grid-gap: 1em;
+    grid-template-rows: minmax(20px auto);
+    padding: 20px;
+    
+}
+.contened div{
+    background-color: rgb(203, 242, 243);
+   
+    padding: 25px;
+    
+  border: 5px solid rgb(161, 163, 163);
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: rgb(118, 124, 126);
+    }
+    ul{
+        list-style-type: circle;
+        font-size: 24px;
+        color: rgb(15, 16, 17);
+        font-weight: bold;
+      }
+      h1{
+        color: rgb(158, 158, 214);
+        font-size: 30px;
+      }
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+      }
+  }
